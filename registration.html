@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo-white.png" alt="Left Logo" class="logo-left">
+        <img src="logo-right.png" alt="Right Logo" class="logo-right">
+    </div>
+
+    <div class="registration">
+        <h1>Registration Form</h1>
+    </div>
+
+    <div class="registration-container">
+        <form>
+            <div class="input-row">
+                <!-- First Name & Last Name Fields -->
+                <div class="input-group">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <!-- Gender & Email Fields -->
+                <div class="input-group">
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Email ID" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <!-- PRN & Year Fields -->
+                <div class="input-group">
+                    <input type="text" id="prn" name="prn" placeholder="PRN" required>
+                </div>
+                <div class="input-group">
+                    <select id="year" name="year" required>
+                        <option value="" disabled selected>Year</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                        <option value="5th Year">5th Year</option>
+                        <option value="6th Year">6th Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <!-- Course Selection (Using Datalist) -->
+                <div class="input-group">
+                    <input list="courseOptions" id="course" name="course" placeholder="Course" required>
+                    <datalist id="courseOptions">
+                        <option value="B.Tech Civil Engineering"></option>
+                        <option value="B.Tech Civil Engineering (Smart Infrastructure and Construction)"></option>
+                        <option value="B.Tech Mechanical Engineering"></option>
+                        <option value="B.Tech Mechanical Engineering (Robotics and Automation)"></option>
+                        <option value="B.Tech Chemical Engineering"></option>
+                        <option value="B.Tech Bioengineering"></option>
+                        <option value="B.Tech Materials Science and Engineering"></option>
+                        <option value="B.Tech Electronics and Communication Engineering"></option>
+                        <option value="B.Tech Electronics and Communication Engineering (Artificial Intelligence and Machine Learning)"></option>
+                        <option value="B.Tech Electrical and Computer Engineering"></option>
+                        <option value="B.Tech Petroleum Engineering"></option>
+                        <option value="B.Tech Computer Science and Engineering"></option>
+                        <option value="B.Tech Computer Science and Engineering (Artificial Intelligence and Data Science)"></option>
+                        <option value="B.Tech Computer Science and Engineering (Cyber Security and Forensics)"></option>
+                        <option value="Integrated B.Tech in Computer Science and Engineering (Diploma + Degree)"></option>
+                        <option value="Integrated B.Tech in Computer Science and Engineering (Artificial Intelligence and Data Science) (Diploma + Degree)"></option>
+                        <option value="Integrated B.Tech in Mechanical Engineering (Diploma + Degree)"></option>
+                        <option value="Integrated B.Tech in Mechanical Engineering (Robotics and Automation) (Diploma + Degree)"></option>
+                        <option value="Integrated B.Tech in Civil Engineering (Smart Infrastructure and Construction) (Diploma + Degree)"></option>
+                        <option value="Integrated B.Tech in Electronics and Communication Engineering (Artificial Intelligence and Machine Learning) (Diploma + Degree)"></option>
+                        <option value="B.Tech (2nd Year Lateral Entry) After 3 Years of Diploma in Engineering"></option>
+                        <option value="Integrated B.Tech DSY (After 12th Standard)"></option>
+                        <option value="B.Sc. Computer Science"></option>
+                        <option value="B.Sc. Data Science and Big Data Analytics"></option>
+                        <option value="BCA Science"></option>
+                        <option value="B.Com"></option>
+                        <option value="B.Com International Accounting and Finance (Accredited by ACCA)"></option>
+                        <option value="B.Com Advanced Accounting and Auditing (AAA)"></option>
+                        <option value="B.Com Fintech"></option>
+                        <option value="B.Sc. Economics"></option>
+                        <option value="BA (Government and Administration)"></option>
+                        <option value="B.Pharm"></option>
+                        <option value="B.Pharm (2nd Year Lateral Entry) After 2 Years Pharmacy Diploma"></option>
+                        <option value="Pharm.D (Doctor of Pharmacy)"></option>
+                        <option value="B.Des. (Animation and VFX Design)"></option>
+                        <option value="B.Des. (Fashion and Apparel Design)"></option>
+                        <option value="B.Des (Interior and Space Design)"></option>
+                        <option value="B.Des. (Product Design)"></option>
+                        <option value="B.Des. (User Experience Design)"></option>
+                        <option value="B.Des. (Visual Communication Design)"></option>
+                        <option value="BFA (Applied Arts)"></option>
+                        <option value="BA English"></option>
+                        <option value="BA Psychology"></option>
+                        <option value="BA Political Science"></option>
+                        <option value="BA Liberal Arts"></option>
+                        <option value="Bachelor of Education (B.Ed.)"></option>
+                        <option value="BA Photography"></option>
+                        <option value="BA Media & Communication"></option>
+                        <option value="BA Filmmaking"></option>
+                        <option value="BBA LL.B. (Hons)"></option>
+                        <option value="BA LL.B. (Hons)"></option>
+                        <option value="BBA Digital Marketing"></option>
+                        <option value="BBA Entrepreneurship and Family Business Management"></option>
+                        <option value="BBA Global Business & Management"></option>
+                        <option value="BBA Branding and Advertising"></option>
+                        <option value="BBA"></option>
+                        <option value="BBA International Business"></option>
+                        <option value="BBA Global Marketing and Event Management"></option>
+                        <option value="BBA Banking Finance and Insurance"></option>
+                        <option value="BBA Business Analytics"></option>
+                        <option value="BBA Global e-Business"></option>
+                        <option value="Integrated Business Management (BBA+MBA)"></option>
+                        <option value="BBA Hospitality and Hotel Administration"></option>
+                        <option value="Integrated M.Sc. Biotechnology"></option>
+                        <option value="B.Sc. Physics"></option>
+                        <option value="BBA HR Management"></option>
+                        <option value="B.Sc. Chemistry"></option>
+                        <option value="B.Sc. Applied Statistics and Data Analytics"></option>
+                        <option value="BFA (Digital Arts)"></option>
+                        <option value="M.Tech Chemical Engineering"></option>
+                        <option value="M.Tech Petroleum Engineering"></option>
+                        <option value="M.Tech Civil Engineering (Construction Engineering and Management)"></option>
+                        <option value="M.Tech Environmental Engineering"></option>
+                        <option value="M.Tech Electronics and Communication Engineering (VLSI and Embedded Systems)"></option>
+                        <option value="M.Tech e-Mobility"></option>
+                        <option value="M.Tech Computer Science and Engineering (Data Science And Analytics)"></option>
+                        <option value="M.Sc. Computer Science"></option>
+                        <option value="M.Sc. Data Science and Big Data Analytics"></option>
+                        <option value="M.Tech Computer Science and Engineering (Cyber Security)"></option>
+                        <option value="M.Sc. Blockchain Technology"></option>
+                        <option value="MCA Science"></option>
+                        <option value="M.Com."></option>
+                        <option value="M.Sc. Economics"></option>
+                        <option value="M.Sc. Environment Science"></option>
+                        <option value="MA in Political Leadership and Government"></option>
+                        <option value="M.Pharm Pharmaceutical Chemistry"></option>
+                        <option value="M.Pharm Pharmaceutics"></option>
+                        <option value="M.Pharm Pharmaceutical Quality Assurance"></option>
+                        <option value="M.Pharm Pharmacology"></option>
+                        <option value="M.Pharm Pharmacognosy"></option>
+                        <option value="M.Pharm Pharmaceutical Analysis"></option>
+                        <option value="Master of Public Health"></option>
+                        <option value="MBA Marketing"></option>
+                        <option value="MBA Supply Chain Management"></option>
+                        <option value="MBA International Business"></option>
+                        <option value="MBA Operations Management"></option>
+                        <option value="MBA Finance"></option>
+                        <option value="MBA Banking Finance and Insurance"></option>
+                        <option value="MBA Business Analytics"></option>
+                        <option value="MBA FinTech"></option>
+                        <option value="MBA Hospital and Healthcare Management"></option>
+                        <option value="MBA Pharmaceutical Management"></option>
+                        <option value="MBA Technology Management"></option>
+                        <option value="MBA Sports Management"></option>
+                        <option value="MBA Event Management"></option>
+                        <option value="MBA Urban Management and Development"></option>
+                        <option value="MBA Innovation, Entrepreneurship & Venture Development"></option>
+                        <option value="MBA Human Resource Management"></option>
+                        <option value="Other"></option>
+                    </datalist>
+                
+            </div>
+
+                <!-- Linktree Image -->
+                <div class="image-group">
+                    <a href="https://linktr.ee/scienceandspiritualityforum" target="_blank">
+                        <img src="linktree-removebg-preview.jpg" alt="Linktree" class="link-image">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add any form validation or submission code here if needed
+            window.location.href = 'thankyou.html'; // Redirect to thankyou page
+        });
+    </script>
+    
+</body>
+</html>
